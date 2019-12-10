@@ -1,0 +1,63 @@
+.asd {
+  opacity: 0.6;
+  max-height: 580px;
+}
+.asd img {
+  max-height: 580px;
+}
+
+.NextRace {
+  font-size: 2rem;
+  background-color: #edecec;
+  border: 2px solid;
+  position: absolute;
+  max-height: 450px;
+
+  /* top: 15%;
+  left: 50%;
+  margin-left: -335px; */
+
+  top: 12%;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+}
+.NextRace p {
+  padding: 0.6em 0.2em;
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 2em;
+}
+.article,
+.article1 {
+  width: 450px;
+  height: 350px;
+}
+.article img,
+.article1 img {
+  position: absolute;
+  border-radius: 2px;
+  max-height: 250px;
+}
+.article p {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0.2em;
+  margin: 0em;
+}
+.article1 p {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0.2em;
+  margin-top: -4.5em;
+}

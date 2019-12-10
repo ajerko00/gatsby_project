@@ -1,13 +1,100 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import Navigation from "./navigation"
+import Image from "./image"
+import { graphql } from "gatsby"
+import "../styles/layout.css"
+
+const menuItems = [
+  {
+    text: "Home",
+    link: "/",
+  },
+  {
+    text: "Teams",
+    link: "/Teams/",
+  },
+  {
+    text: "Drivers",
+    link: "/Drivers/",
+  },
+  {
+    text: "Schedule",
+    link: "/Schedule/",
+  },
+  {
+    text: "Standings",
+    link: "/Standings/",
+  },
+  {
+    text: "Login",
+    link: "/Login/",
+  },
+]
+
+const Layout = props => {
+  return (
+    <div className="layout">
+      <Navigation menuItems={menuItems}></Navigation>
+      <div className="slika">
+        <Image />
+      </div>
+      {props.children}
+    </div>
+  )
+}
+
+export default Layout
+
+export const query = graphql`
+  {
+    allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
+      edges {
+        node {
+          id
+          base
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+/* const Layout = () => {
+  return (
+    <layout>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/Teams">Teams</Link>
+          </li>
+          <li>
+            <Link to="/Drivers">Drivers</Link>
+          </li>
+          <li>
+            <Link to="/Schedule">Schedule</Link>
+          </li>
+          <li>
+            <Link to="/Standings">Standings</Link>
+          </li>
+          <li>
+            <Link to="/Login">Login</Link>
+          </li>
+        </ul>
+      </nav>
+    </layout>
+  )
+}
+
+export default Layout */
+
+/* import PropTypes from "prop-types"
 
 import Header from "./header"
 import "./layout.css"
@@ -50,3 +137,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+ */

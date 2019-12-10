@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Roboto;
+}
+li {
+  padding: 0em 0em;
+  margin: 0 auto;
+}
+li:hover {
+  transform: scale(1.05);
+}
+
+/* li {
+  position: absolute;
+  padding: 0.5em 0em;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+} */
