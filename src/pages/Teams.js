@@ -2,27 +2,47 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import { graphql } from "gatsby"
 import "../styles/teams.css"
 
 const Teams = ({ data }) => {
   return (
     <div>
+      <SEO title="Teams" />
       <Layout />
-      <div id="ajnemojradit">
-        <div class="grid-container">
-          <div class="grid-item">1</div>
-          <div class="grid-item">2</div>
-          <div class="grid-item">3</div>
-          <div class="grid-item">4</div>
-          <div class="grid-item">5</div>
-          <div class="grid-item">6</div>
-          <div class="grid-item">7</div>
-          <div class="grid-item">8</div>
-          <div class="grid-item">9</div>
+
+      <div id="grid-container-teams">
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+        </div>
+        <div class="grid-item-teams">
+          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
         </div>
       </div>
-
-      <SEO title="Teams" />
     </div>
   )
 }

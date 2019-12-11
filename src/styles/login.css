@@ -1,0 +1,17 @@
+.LoginForm {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin: 0 0 150px -200px;
+}
+.LoginForm label {
+  margin: 2em;
+  padding: 3em;
+}
+form {
+  padding: 2em 0.5em;
+}

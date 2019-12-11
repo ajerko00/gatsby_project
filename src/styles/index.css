@@ -28,7 +28,7 @@
 #container {
   display: flex;
   justify-content: space-evenly;
-  margin: 2em 2em;
+  margin: 2em;
 }
 .article,
 .article1 {

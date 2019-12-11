@@ -1,9 +1,9 @@
-#grid-container-teams {
+#grid-container-schedule {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
 }
-.grid-item-teams {
+.grid-item-schedule {
   margin: 1em;
   border: 1px solid blue;
   border-radius: 2px;
