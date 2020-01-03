@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import { graphql } from "gatsby"
 import "../styles/navigation.css"
 
 const Navigation = ({ menuItems }) => {
-  const menus = menuItems.map(({ link, text, data }) => (
+  const menus = menuItems.map(({ link, text }) => (
     <li key={link}>
       <Link to={link}>{text}</Link>
     </li>
@@ -13,24 +12,6 @@ const Navigation = ({ menuItems }) => {
   return <ul>{menus}</ul>
 }
 export default Navigation
-
-export const query = graphql`
-  {
-    allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 /*  import React from "react"
 import Link from "gatsby-link"

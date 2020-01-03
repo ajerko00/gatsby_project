@@ -1,9 +1,12 @@
 var plugins = [{
-      plugin: require('C:/Users/A507/Desktop/gatsby/gatsby_project/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/Antonio/gatsby-project/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/A507/Desktop/gatsby/gatsby_project/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/f1-logo.png"},
+      plugin: require('C:/Users/Antonio/gatsby-project/node_modules/@debiki/gatsby-plugin-talkyard/gatsby-ssr'),
+      options: {"plugins":[],"talkyardServerUrl":"https://comments-demo.talkyard.io"},
+    },{
+      plugin: require('C:/Users/Antonio/gatsby-project/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/a/f1-logo.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

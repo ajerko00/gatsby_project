@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
+      allFile(filter: { absolutePath: { regex: "/src/images/a/" } }) {
         edges {
           node {
             id
@@ -32,7 +32,7 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+  return <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
 }
 
 export default Image

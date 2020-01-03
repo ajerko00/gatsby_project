@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "../styles/schedule.css"
 
-const Schedule = ({data}) => {
+const Schedule = ({ data }) => {
   return (
     <div>
       <SEO title="Schedule" />
@@ -82,7 +82,7 @@ export default Schedule
 
 export const query = graphql`
   {
-    allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
+    allFile(filter: { absolutePath: { regex: "/src/images/" } }) {
       edges {
         node {
           id

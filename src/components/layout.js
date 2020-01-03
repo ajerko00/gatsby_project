@@ -1,7 +1,6 @@
 import React from "react"
 import Navigation from "./navigation"
 import Image from "./image"
-import { graphql } from "gatsby"
 import "../styles/layout.css"
 
 const menuItems = [
@@ -44,24 +43,6 @@ const Layout = props => {
 }
 
 export default Layout
-
-export const query = graphql`
-  {
-    allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 /* const Layout = () => {
   return (
