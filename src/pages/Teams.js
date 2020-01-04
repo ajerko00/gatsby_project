@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import "../styles/teams.css"
 
 const Teams = ({ data }) => {
@@ -12,60 +12,82 @@ const Teams = ({ data }) => {
       <Layout />
 
       <div id="grid-container-teams">
-        {/* {data.allFile.edges.map(edge => (
-          <Img fluid={edge.node.childImageSharp.fluid} />
-        ))} */}
-
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[4].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[5].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[6].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[7].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[8].node.childImageSharp.fluid} />
-        </div>
-        <div class="grid-item-teams">
-          <Img fluid={data.allFile.edges[9].node.childImageSharp.fluid} />
-        </div>
+        <Link to="/AlfaRomeo" className="grid-item-teams">
+          <Img fluid={data.AlfaRomeo.childImageSharp.fluid} />
+        </Link>
+        <Link to="/Ferrari" className="grid-item-teams">
+          <Img fluid={data.Ferrari.childImageSharp.fluid} />
+        </Link>
+        <Link to="/HAAS" className="grid-item-teams">
+          <Img fluid={data.HAAS.childImageSharp.fluid} />
+        </Link>
+        <Link to="/McLaren" className="grid-item-teams">
+          <Img fluid={data.McLaren.childImageSharp.fluid} />
+        </Link>
+        <Link to="/Mercedes" className="grid-item-teams">
+          <Img fluid={data.Mercedes.childImageSharp.fluid} />
+        </Link>
+        <Link to="/RacingPoint" className="grid-item-teams">
+          <Img fluid={data.RacingPoint.childImageSharp.fluid} />
+        </Link>
+        <Link to="/RedBull" className="grid-item-teams">
+          <Img fluid={data.RedBull.childImageSharp.fluid} />
+        </Link>
+        <Link to="/Renault" className="grid-item-teams">
+          <Img fluid={data.Renault.childImageSharp.fluid} />
+        </Link>
+        <Link to="/ToroRosso" className="grid-item-teams">
+          <Img fluid={data.ToroRosso.childImageSharp.fluid} />
+        </Link>
+        <Link to="/Williams" className="grid-item-teams">
+          <Img fluid={data.Williams.childImageSharp.fluid} />
+        </Link>
       </div>
     </div>
   )
 }
 export default Teams
 
-export const query = graphql`
-  {
-    allFile(filter: { absolutePath: { regex: "/src/images/teams/" } }) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
+export const squareImage = graphql`
+  fragment squareImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
       }
+    }
+  }
+`
+export const query = graphql`
+  query {
+    AlfaRomeo: file(relativePath: { eq: "teams/AlfaRomeo.jpg" }) {
+      ...squareImage
+    }
+    Ferrari: file(relativePath: { eq: "teams/Ferrari.jpg" }) {
+      ...squareImage
+    }
+    HAAS: file(relativePath: { eq: "teams/HAAS.jpg" }) {
+      ...squareImage
+    }
+    McLaren: file(relativePath: { eq: "teams/McLaren.jpg" }) {
+      ...squareImage
+    }
+    Mercedes: file(relativePath: { eq: "teams/Mercedes.jpg" }) {
+      ...squareImage
+    }
+    RacingPoint: file(relativePath: { eq: "teams/RacingPoint.jpg" }) {
+      ...squareImage
+    }
+    RedBull: file(relativePath: { eq: "teams/RedBull.png" }) {
+      ...squareImage
+    }
+    Renault: file(relativePath: { eq: "teams/Renault.png" }) {
+      ...squareImage
+    }
+    ToroRosso: file(relativePath: { eq: "teams/ToroRosso.jpg" }) {
+      ...squareImage
+    }
+    Williams: file(relativePath: { eq: "teams/Williams.png" }) {
+      ...squareImage
     }
   }
 `
