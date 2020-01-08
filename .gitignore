@@ -68,3 +68,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+src/markdown-pages/teams-md
+src/markdown-pages/drivers-md
