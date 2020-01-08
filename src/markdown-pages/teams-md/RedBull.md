@@ -1,5 +1,5 @@
 ---
-path: "/redbull"
+path: "/RedBull"
 title: "RedBull Racing Honda"
 featuredImage: pics-teams\RedBull.jpg
 stuff: "
