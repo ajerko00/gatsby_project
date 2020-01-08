@@ -1,5 +1,5 @@
 ---
-path: "/Mclaren"
+path: "/McLaren"
 title: "Hamilton close to his 6h title"
 featuredImage: Lewis2.jpg
 ---

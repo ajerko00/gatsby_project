@@ -18,7 +18,7 @@ const Teams = ({ data }) => {
         <Link to="/Ferrari" className="grid-item-teams">
           <Img fluid={data.Ferrari.childImageSharp.fluid} />
         </Link>
-        <Link to="/HAAS" className="grid-item-teams">
+        <Link to="/Haas" className="grid-item-teams">
           <Img fluid={data.HAAS.childImageSharp.fluid} />
         </Link>
         <Link to="/McLaren" className="grid-item-teams">
