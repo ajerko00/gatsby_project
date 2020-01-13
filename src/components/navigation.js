@@ -1,88 +1,73 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Fragment } from "react"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import "../styles/navigation.css"
+import Media from "react-media"
 
 const Navigation = ({ menuItems }) => {
-  const menus = menuItems.map(({ link, text }) => (
+  const menus = menuItems.map(({ link, text, data }) => (
     <li key={link}>
       <Link to={link}>{text}</Link>
     </li>
   ))
 
-  return <ul>{menus}</ul>
+  /*  const menuMob = menuItems.map(({ data, link, slikaStuff }) => (
+    <li key={link}>
+      <Link to={link}>
+        <Img fluid={slikaStuff} />
+      </Link>
+    </li>
+  )) */
+
+  return (
+    <div>
+      <Media
+        queries={{
+          small: "(max-width: 599px)",
+          large: "(min-width: 600px)",
+        }}
+      >
+        {matches => (
+          <Fragment>
+            {matches.small && <p>sta sad</p>}
+            {matches.large && <ul>{menus}</ul>}
+          </Fragment>
+        )}
+      </Media>
+    </div>
+  )
 }
 export default Navigation
 
-/*  import React from "react"
-import Link from "gatsby-link"
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
-import "../styles/navigation.css"
-
-
-const Menu = ({ data }) => (
-  <div
-    class="bckgrn"
-    
-  > 
-  
- {
-   <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} /> 
-}
-{
-   <div
-      style={{
-        fixed,
-      }}
-    >
-      {data.allFile.edges.map(({ node }) => (
-        <Img key={node.id} fluid={node.childImageSharp.fluid} />
-      ))}
-    </div> 
-}
-{
-  
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/Teams">Teams</Link>
-      </li>
-      <li>
-        <Link to="/Drivers">Drivers</Link>
-      </li>
-      <li>
-        <Link to="/Schedule">Schedule</Link>
-      </li>
-      <li>
-        <Link to="/Standings">Standings</Link>
-      </li>
-      <li>
-        <Link to="/Login">Login</Link>
-      </li>
-    </ul>
-  </div>
-)
-
-export default Menu
-
-export const query = graphql`
-  {
-    allFile(filter: { absolutePath: { regex: "//src/images//" } }) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
+export const squareImage = graphql`
+  fragment squareImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
       }
     }
   }
-` 
-}
- */
+`
+export const query = graphql`
+  query {
+    Home: file(relativePath: { eq: "layout/home.png" }) {
+      ...squareImage
+    }
+    Teams: file(relativePath: { eq: "layout/teams.png" }) {
+      ...squareImage
+    }
+    Drivers: file(relativePath: { eq: "layout/drivers.png" }) {
+      ...squareImage
+    }
+    Schedule: file(relativePath: { eq: "layout/schedule.png" }) {
+      ...squareImage
+    }
+    Standings: file(relativePath: { eq: "layout/standings.png" }) {
+      ...squareImage
+    }
+    Login: file(relativePath: { eq: "layout/login.png" }) {
+      ...squareImage
+    }
+  }
+`

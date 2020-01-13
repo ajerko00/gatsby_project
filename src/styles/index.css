@@ -18,38 +18,71 @@
   left: 50%;
   margin-left: -335px; */
 
-  top: 12%;
+  top: 110px;
   left: 50%;
 
   transform: translate(-50%, 0);
 }
 @media screen and (max-width: 1400px) {
   .NextRace {
-    font-size: 1.5rem;
-    line-height: 1.6rem;
-    max-height: 350px;
+    font-size: 1.95rem;
+    line-height: 2.05rem;
+    max-height: 440px;
+    width: 670px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .NextRace {
-    font-size: 1rem;
-    line-height: 1.1rem;
-    max-height: 230px;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    max-height: 360px;
+    width: 550px;
+    top: 10%;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 750px) {
   .NextRace {
-    font-size: 0.6rem;
-    line-height: 0.65rem;
-    max-height: 140px;
+    font-size: 1.35rem;
+    line-height: 1.45rem;
+    max-height: 305px;
+    width: 460px;
+    top: 7.5%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .NextRace {
-    top: 8%;
-    font-size: 0.5rem;
-    line-height: 0.55rem;
-    max-height: 110px;
+    top: 7%;
+    max-height: 250px;
+    width: 380px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .NextRace {
+    top: 6.5%;
+    max-height: 215px;
+    width: 330px;
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .NextRace {
+    top: 6%;
+    max-height: 190px;
+    width: 280px;
+    font-size: 0.9rem;
+    line-height: 0.95rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .NextRace {
+    max-height: 150px;
+    width: 230px;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
   }
 }
 .NextRace p {
@@ -61,12 +94,12 @@
   justify-content: center;
   margin: 2em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   #container-art {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   #container-art {
     grid-template-columns: 1fr;
   }

@@ -4,6 +4,8 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve("src/templates/post.js")
+  const driverTemplate = path.resolve("src/templates/post-drivers.js")
+  const teamTemplate = path.resolve("src/templates/post-teams.js")
 
   return graphql(`
     {
@@ -25,10 +27,40 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(res.errors)
     }
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-      })
+      if (node.frontmatter.posttype === "article") {
+        createPage({
+          path: node.frontmatter.path,
+          component: postTemplate,
+        })
+      } else if (edge.node.frontmatter.posttype === "driver") {
+        createPage({
+          path: node.frontmatter.path,
+          component: driverTemplate,
+        })
+      } else if (edge.node.frontmatter.posttype === "team") {
+        createPage({
+          path: node.frontmatter.path,
+          component: teamTemplate,
+        })
+      }
     })
   })
 }
+
+/* result.data.allMarkdownRemark.edges.forEach(edge => {
+  if (edge.node.frontmatter.posttype === 'project') {
+      createPage({
+          path: edge.node.frontmatter.path,
+          component: projectTemplate,
+          context: {}
+      });
+  }   
+  else {
+      createPage({
+          path: edge.node.frontmatter.path,
+          component: postTemplate,
+          context: {
+          },
+      })
+  }
+})     */

@@ -5,28 +5,40 @@ import "../styles/layout.css"
 
 const menuItems = [
   {
+    path: "/../images/layout/home.png",
     text: "Home",
     link: "/",
+    slikaStuff: "data.Home.childImageSharp.fluid",
   },
   {
+    path: "../images/layout/teams.png",
     text: "Teams",
     link: "/Teams/",
+    slikaStuff: "data.teams.childImageSharp.fluid",
   },
   {
+    path: "src/images/layout/drivers.png",
     text: "Drivers",
     link: "/Drivers/",
+    slikaStuff: "data.Drivers.childImageSharp.fluid",
   },
   {
+    path: "/src/images/layout/schedule.png",
     text: "Schedule",
     link: "/Schedule/",
+    slikaStuff: "data.Schedule.childImageSharp.fluid",
   },
   {
+    path: "/layout/standings.png",
     text: "Standings",
     link: "/Standings/",
+    slikaStuff: "data.Standings.childImageSharp.fluid",
   },
   {
+    path: "layout/login.png",
     text: "Login",
     link: "/Login/",
+    slikaStuff: "data.Login.childImageSharp.fluid",
   },
 ]
 
@@ -34,6 +46,7 @@ const Layout = props => {
   return (
     <div className="layout">
       <Navigation menuItems={menuItems}></Navigation>
+
       <div className="slika">
         <Image />
       </div>
@@ -72,14 +85,11 @@ export default Layout
     </layout>
   )
 }
-
 export default Layout */
 
 /* import PropTypes from "prop-types"
-
 import Header from "./header"
 import "./layout.css"
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -90,7 +100,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -112,10 +121,8 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
 export default Layout
  */
