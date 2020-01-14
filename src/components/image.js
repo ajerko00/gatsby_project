@@ -15,24 +15,18 @@ import Img from "gatsby-image"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { absolutePath: { regex: "/src/images/a/" } }) {
-        edges {
-          node {
-            id
-            base
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
+    query {
+      file(relativePath: { eq: "a/f1-logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
+  return <Img fluid={data.file.childImageSharp.fluid} />
 }
 
 export default Image

@@ -17,6 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
               title
+              posttype
             }
           }
         }
@@ -32,12 +33,12 @@ exports.createPages = ({ actions, graphql }) => {
           path: node.frontmatter.path,
           component: postTemplate,
         })
-      } else if (edge.node.frontmatter.posttype === "driver") {
+      } else if (node.frontmatter.posttype === "driver") {
         createPage({
           path: node.frontmatter.path,
           component: driverTemplate,
         })
-      } else if (edge.node.frontmatter.posttype === "team") {
+      } else if (node.frontmatter.posttype === "team") {
         createPage({
           path: node.frontmatter.path,
           component: teamTemplate,

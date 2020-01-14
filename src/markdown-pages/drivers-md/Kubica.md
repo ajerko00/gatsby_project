@@ -1,5 +1,5 @@
 ---
-path: "/second-article"
+path: "/Kubica"
 title: "Hamilton close to his 6h title"
 featuredImage: Lewis2.jpg
 posttype: driver

@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Roboto;
+}
+.Mob li {
+  color: black;
+  padding: 0em 0em;
+  margin: 0 auto;
+  margin-top: 0 auto;
+}
+li:hover {
+  transform: scale(1.05);
+}
+/* .Mob li .pic {
+  position: relative;
+  z-index: -1;
+  color: black;
+  width: 100px;
+  margin-top: 500px;
+} */

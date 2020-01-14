@@ -1,20 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import ImagesNav from "./images-nav"
 
-import "../styles/navigation.css"
-
-const Navigation = ({ menuItems }) => {
-  const menus = menuItems.map(({ link, text }) => (
-    <li key={link}>
-      <Link to={link}>{text}</Link>
-    </li>
-  ))
-
-  return <ul>{menus}</ul>
+const NavMob = ({ menuItems, data }) => {
+  return (
+    <div>
+      <ImagesNav />
+    </div>
+  )
 }
-export default Navigation
 
-/* export const squareImage = graphql`
+export default NavMob
+
+export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
       fluid {
@@ -44,4 +41,4 @@ export const query = graphql`
       ...squareImage
     }
   }
-` */
+`

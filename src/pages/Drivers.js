@@ -5,11 +5,12 @@ import Img from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import "../styles/drivers.css"
 
-const Drivers = ({ props, data }) => {
+const Drivers = ({ data }) => {
   return (
     <div>
-      <SEO title="Drivers" />
       <Layout />
+
+      <SEO title="Drivers" />
 
       <div id="grid-container-drivers">
         <Link to="/Albon" className="grid-item-drivers">

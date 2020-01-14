@@ -7,41 +7,43 @@ import "../styles/teams.css"
 
 const Teams = ({ data }) => {
   return (
-    <div className="teams_f1">
-      <SEO title="Teams" />
+    <div>
       <Layout />
+      <div className="teams_f1">
+        <SEO title="Teams" />
 
-      <div id="grid-container-teams">
-        <Link to="/AlfaRomeo" className="grid-item-teams">
-          <Img fluid={data.AlfaRomeo.childImageSharp.fluid} />
-        </Link>
-        <Link to="/Ferrari" className="grid-item-teams">
-          <Img fluid={data.Ferrari.childImageSharp.fluid} />
-        </Link>
-        <Link to="/HAAS" className="grid-item-teams">
-          <Img fluid={data.HAAS.childImageSharp.fluid} />
-        </Link>
-        <Link to="/McLaren" className="grid-item-teams">
-          <Img fluid={data.McLaren.childImageSharp.fluid} />
-        </Link>
-        <Link to="/Mercedes" className="grid-item-teams">
-          <Img fluid={data.Mercedes.childImageSharp.fluid} />
-        </Link>
-        <Link to="/RacingPoint" className="grid-item-teams">
-          <Img fluid={data.RacingPoint.childImageSharp.fluid} />
-        </Link>
-        <Link to="/RedBull" className="grid-item-teams">
-          <Img fluid={data.RedBull.childImageSharp.fluid} />
-        </Link>
-        <Link to="/Renault" className="grid-item-teams">
-          <Img fluid={data.Renault.childImageSharp.fluid} />
-        </Link>
-        <Link to="/ToroRosso" className="grid-item-teams">
-          <Img fluid={data.ToroRosso.childImageSharp.fluid} />
-        </Link>
-        <Link to="/Williams" className="grid-item-teams">
-          <Img fluid={data.Williams.childImageSharp.fluid} />
-        </Link>
+        <div id="grid-container-teams">
+          <Link to="/AlfaRomeo" className="grid-item-teams">
+            <Img fluid={data.AlfaRomeo.childImageSharp.fluid} />
+          </Link>
+          <Link to="/Ferrari" className="grid-item-teams">
+            <Img fluid={data.Ferrari.childImageSharp.fluid} />
+          </Link>
+          <Link to="/Haas" className="grid-item-teams">
+            <Img fluid={data.Haas.childImageSharp.fluid} />
+          </Link>
+          <Link to="/McLaren" className="grid-item-teams">
+            <Img fluid={data.McLaren.childImageSharp.fluid} />
+          </Link>
+          <Link to="/Mercedes" className="grid-item-teams">
+            <Img fluid={data.Mercedes.childImageSharp.fluid} />
+          </Link>
+          <Link to="/RacingPoint" className="grid-item-teams">
+            <Img fluid={data.RacingPoint.childImageSharp.fluid} />
+          </Link>
+          <Link to="/RedBull" className="grid-item-teams">
+            <Img fluid={data.RedBull.childImageSharp.fluid} />
+          </Link>
+          <Link to="/Renault" className="grid-item-teams">
+            <Img fluid={data.Renault.childImageSharp.fluid} />
+          </Link>
+          <Link to="/ToroRosso" className="grid-item-teams">
+            <Img fluid={data.ToroRosso.childImageSharp.fluid} />
+          </Link>
+          <Link to="/Williams" className="grid-item-teams">
+            <Img fluid={data.Williams.childImageSharp.fluid} />
+          </Link>
+        </div>
       </div>
     </div>
   )
@@ -65,7 +67,7 @@ export const query = graphql`
     Ferrari: file(relativePath: { eq: "teams/Ferrari.jpg" }) {
       ...squareImage
     }
-    HAAS: file(relativePath: { eq: "teams/HAAS.jpg" }) {
+    Haas: file(relativePath: { eq: "teams/HAAS.jpg" }) {
       ...squareImage
     }
     McLaren: file(relativePath: { eq: "teams/McLaren.jpg" }) {

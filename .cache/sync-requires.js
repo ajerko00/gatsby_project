@@ -5,7 +5,9 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-post-drivers-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\templates\\post-drivers.js"))),
   "component---src-templates-post-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\templates\\post.js"))),
+  "component---src-templates-post-teams-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\templates\\post-teams.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\.cache\\dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\404.js"))),
   "component---src-pages-drivers-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\Drivers.js"))),

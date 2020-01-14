@@ -2,37 +2,19 @@ module.exports = {
   siteMetadata: {
     title: `F1`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    menuItems: [
-      {
-        text: "Home",
-        link: "/",
-      },
-      {
-        text: "Teams",
-        link: "/Teams/",
-      },
-      {
-        text: "Drivers",
-        link: "/Drivers/",
-      },
-      {
-        text: "Schedule",
-        link: "/Schedule/",
-      },
-      {
-        text: "Standings",
-        link: "/Standings/",
-      },
-      {
-        text: "Login",
-        link: "/Login/",
-      },
-    ],
+
     author: `@gatsbyjs`,
   },
-
   plugins: [
     `gatsby-plugin-react-helmet`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown-pages/`,
+        name: `markdown-pages`,
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,12 +27,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
 
     {
       resolve: `@debiki/gatsby-plugin-talkyard`,

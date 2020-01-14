@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import "../styles/post-teams.css"
@@ -10,22 +11,29 @@ export default function Template({ data }) {
     <div>
       <Layout />
       <h1>{post.frontmatter.title}</h1>
-      <div>{post.frontmatter.stuff}</div>
-      <Img fluid={featuredImgFluid} />
+      <div className="upper">
+        <div
+          className="text1"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+
+        <Img className="slika-md" fluid={featuredImgFluid} />
+      </div>
+
       <div className="text" dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
   )
 }
 
 export const query = graphql`
-  query PostQuery($path: String!) {
+  query postQueryAndPostQueryAndPostQueryAndPostQuery($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         title
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
