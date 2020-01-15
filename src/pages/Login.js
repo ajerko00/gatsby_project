@@ -1,6 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { handleLogin, isLoggedIn } from "../components/auth"
+import { handleLogin, isLoggedIn } from "../services/auth"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/login.css"
@@ -37,19 +37,23 @@ class Login extends React.Component {
               navigate(`/app/profile`)
             }}
           >
-            <label>
+            <label className="userLogin">
               Username
-              <input type="text" name="username" onChange={this.handleUpdate} />
+              <input
+                type="text"
+                className="username"
+                onChange={this.handleUpdate}
+              />
             </label>
             <label>
               Password
               <input
                 type="password"
-                name="password"
+                className="password"
                 onChange={this.handleUpdate}
               />
             </label>
-            <input type="submit" value="Log In" />
+            <input type="submit" value="Log In" className="login" />
           </form>
         </div>
       </>

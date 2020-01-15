@@ -2,11 +2,12 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "component---src-templates-post-drivers-js": () => import("../src/templates/post-drivers.js" /* webpackChunkName: "component---src-templates-post-drivers-js" */),
   "component---src-templates-post-js": () => import("../src/templates/post.js" /* webpackChunkName: "component---src-templates-post-js" */),
+  "component---src-templates-post-drivers-js": () => import("../src/templates/post-drivers.js" /* webpackChunkName: "component---src-templates-post-drivers-js" */),
   "component---src-templates-post-teams-js": () => import("../src/templates/post-teams.js" /* webpackChunkName: "component---src-templates-post-teams-js" */),
   "component---cache-dev-404-page-js": () => import("dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
+  "component---src-pages-app-js": () => import("../src/pages/app.js" /* webpackChunkName: "component---src-pages-app-js" */),
   "component---src-pages-drivers-js": () => import("../src/pages/Drivers.js" /* webpackChunkName: "component---src-pages-drivers-js" */),
   "component---src-pages-index-js": () => import("../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-login-js": () => import("../src/pages/Login.js" /* webpackChunkName: "component---src-pages-login-js" */),
