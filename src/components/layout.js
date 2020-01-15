@@ -38,7 +38,7 @@ const Layout = props => {
     <div className="layout">
       <Media
         queries={{
-          small: "(max-width: 599px)",
+          small: "@media screen and (max-width: 599px)",
           large: "(min-width: 600px)",
         }}
       >
@@ -52,8 +52,8 @@ const Layout = props => {
       <div className="slika">
         <Image />
       </div>
-      {/*       {props.children}
-       */}{" "}
+        {props.children}
+
     </div>
   )
 }
