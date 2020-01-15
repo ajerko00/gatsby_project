@@ -38,7 +38,7 @@ const Layout = props => {
     <div className="layout">
       <Media
         queries={{
-          small: "@media screen and (max-width: 599px)",
+          small: "(max-width: 599px)",
           large: "(min-width: 600px)",
         }}
       >
