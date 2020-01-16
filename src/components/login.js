@@ -41,8 +41,9 @@ class Login extends React.Component {
               Username
               <input
                 type="text"
-                className="username"
+   
                 name="username"
+className="username"
                 onChange={this.handleUpdate}
               />
             </label>
