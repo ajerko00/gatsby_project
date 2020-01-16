@@ -1,6 +1,7 @@
 import React from "react"
 import { getUser } from "../services/auth"
-const Profile = () => (
+/* import Login from "./login"
+ */ const Profile = () => (
   <>
     <h1>Your profile</h1>
     <ul>

@@ -13,7 +13,7 @@ exports.components = {
   "component---src-pages-app-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\app.js"))),
   "component---src-pages-drivers-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\Drivers.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\index.js"))),
-  "component---src-pages-login-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\Login.js"))),
+  "component---src-pages-login-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\login.js"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\page-2.js"))),
   "component---src-pages-schedule-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\Schedule.js"))),
   "component---src-pages-standings-js": hot(preferDefault(require("C:\\Users\\Antonio\\gatsby-project\\src\\pages\\Standings.js"))),

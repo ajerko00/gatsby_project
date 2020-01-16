@@ -1,34 +1,6 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
-
-const menuItemsLogged = [
-  {
-    text: "Home",
-    link: "/",
-  },
-  {
-    text: "Teams",
-    link: "/Teams/",
-  },
-  {
-    text: "Drivers",
-    link: "/Drivers/",
-  },
-  {
-    text: "Schedule",
-    link: "/Schedule/",
-  },
-  {
-    text: "Standings",
-    link: "/Standings/",
-  },
-  {
-    text: "Logout",
-    link: "/Logout/",
-  },
-]
-
 export default () => {
   const content = { message: "", login: true }
   if (isLoggedIn()) {
@@ -47,7 +19,6 @@ export default () => {
     >
       <span>{content.message}</span>
       <nav>
-        <Link to="/">Home</Link>
         {` `}
         <Link to="/app/profile">Profile</Link>
         {` `}

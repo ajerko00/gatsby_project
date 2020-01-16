@@ -1,3 +1,6 @@
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
+
 const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
@@ -48,19 +51,6 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-// Implement the Gatsby API “onCreatePage”. This is
-// called after every page is created.
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage } = actions
-  // page.matchPath is a special key that's used for matching pages
-  // only on the client.
-  if (page.path.match(/^\/app/)) {
-    page.matchPath = "/app/*"
-    // Update the page.
-    createPage(page)
-  }
-}
-
 /* result.data.allMarkdownRemark.edges.forEach(edge => {
   if (edge.node.frontmatter.posttype === 'project') {
       createPage({
@@ -78,3 +68,13 @@ exports.onCreatePage = async ({ page, actions }) => {
       })
   }
 })     */
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  // page.matchPath is a special key that's used for matching pages
+  // only on the client.
+  if (page.path.match(/^\/app/)) {
+    page.matchPath = "/app/*"
+    // Update the page.
+    createPage(page)
+  }
+}

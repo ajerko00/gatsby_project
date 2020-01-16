@@ -2,9 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import "../styles/index.css"
-
 import SEO from "../components/seo"
-
 import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => {

@@ -1,10 +1,11 @@
 import React, { Fragment } from "react"
 import Navigation from "./navigation"
 import NavMob from "./navigationMob"
-
 import Image from "./image"
 import "../styles/layout.css"
 import Media from "react-media"
+
+import NavBar from "./nav-bar"
 
 const menuItems = [
   {
@@ -29,13 +30,14 @@ const menuItems = [
   },
   {
     text: "Login",
-    link: "/Login/",
+    link: "/login/",
   },
 ]
 
 const Layout = props => {
   return (
     <div className="layout">
+      <NavBar />
       <Media
         queries={{
           small: "(max-width: 599px)",
