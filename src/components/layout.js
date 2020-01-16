@@ -10,27 +10,27 @@ import NavBar from "./nav-bar"
 const menuItems = [
   {
     text: "Home",
-    link: "/",
+    link: "",
   },
   {
     text: "Teams",
-    link: "/Teams/",
+    link: "/Teams",
   },
   {
     text: "Drivers",
-    link: "/Drivers/",
+    link: "/Drivers",
   },
   {
     text: "Schedule",
-    link: "/Schedule/",
+    link: "/Schedule",
   },
   {
     text: "Standings",
-    link: "/Standings/",
+    link: "/Standings",
   },
   {
     text: "Login",
-    link: "/login/",
+    link: "/login",
   },
 ]
 
@@ -54,8 +54,7 @@ const Layout = props => {
       <div className="slika">
         <Image />
       </div>
-        {props.children}
-
+      {props.children}
     </div>
   )
 }
