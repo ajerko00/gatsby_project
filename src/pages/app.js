@@ -8,7 +8,7 @@ const App = () => (
   <Layout>
     <Router>
       <PrivateRoute path="/app/profile" component={Profile} />
-      <Login path="/login" />
+      <Login path="/login/" />
     </Router>
   </Layout>
 )

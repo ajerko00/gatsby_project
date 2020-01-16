@@ -30,7 +30,7 @@ const menuItems = [
   },
   {
     text: "Login",
-    link: "/login",
+    link: "/login/",
   },
 ]
 

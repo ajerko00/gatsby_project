@@ -27,7 +27,7 @@ export default () => {
             href="/"
             onClick={event => {
               event.preventDefault()
-              logout(() => navigate(`/login`))
+              logout(() => navigate(`/login/`))
             }}
           >
             Logout
