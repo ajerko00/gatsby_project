@@ -54,8 +54,8 @@ const Layout = props => {
       <div className="slika">
         <Image />
       </div>
-      {/*       {props.children}
-       */}{" "}
+        {props.children}
+
     </div>
   )
 }
