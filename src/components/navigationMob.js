@@ -1,7 +1,7 @@
 import React from "react"
 import ImagesNav from "./images-nav"
 
-const NavMob = ({ menuItems, data }) => {
+const NavMob = () => {
   return (
     <div>
       <ImagesNav />

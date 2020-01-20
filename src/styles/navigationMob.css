@@ -1,6 +1,5 @@
-ul {
+/* ul {
   list-style: none;
-  display: flex;
   justify-content: space-evenly;
   font-family: Roboto;
 }
@@ -12,7 +11,7 @@ ul {
 }
 li:hover {
   transform: scale(1.05);
-}
+} */
 /* .Mob li .pic {
   position: relative;
   z-index: -1;

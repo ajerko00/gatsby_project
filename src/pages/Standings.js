@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/standings.css"
 
-const Standings = () => {
+const Standings = ({ isOn, handleToggle }) => {
+  const [value, setValue] = useState(false)
   return (
     <div className="aaa">
       <SEO title="Standings" />
@@ -14,12 +15,19 @@ const Standings = () => {
         <span class="slider round" />
         Drivers
       </label> */}
+
       <label class="switch">
-        <input type="checkbox" id="togBtn" />
+        <input
+          checked={isOn}
+          onChange={handleToggle}
+          type="checkbox"
+          id="togBtn"
+        />
         <div class="slider round"></div>
       </label>
 
-      <table type="width:100%" name="drivers">
+      {/*  <Switch isOn={value} handleToggle={() => setValue(!value)} /> */}
+      <table type="width:100%" className="drivers">
         <tr>
           <th></th>
           <th>DRIVERS</th>
@@ -147,7 +155,7 @@ const Standings = () => {
           <td>94</td>
         </tr>
       </table>
-      <table type="width:100%" name="teams">
+      <table type="width:100%" className="teams">
         <tr>
           <th></th>
 

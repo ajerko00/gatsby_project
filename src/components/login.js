@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
 import { handleLogin, isLoggedIn } from "../services/auth"
-import Layout from "./layout"
 import SEO from "./seo"
 import "../styles/login.css"
 
@@ -21,33 +20,31 @@ class Login extends React.Component {
   }
   render() {
     if (isLoggedIn()) {
-      navigate(`/app/profile`)
+      navigate(`/`)
     }
     return (
-      <>
+      <div className="LoginDiv">
         <SEO title="Login" />
 
-        {/*         <Layout />
-         */}
         <div className="LoginForm">
           <form
             method="post"
             onSubmit={event => {
               this.handleSubmit(event)
-              navigate(`/app/profile`)
+              navigate(`/`)
             }}
           >
-            <label className="userLogin">
-              Username
+            <label>
+              Username:
               <input
                 type="text"
-                className="username"
                 name="username"
+                className="username"
                 onChange={this.handleUpdate}
               />
             </label>
             <label>
-              Password
+              Password:
               <input
                 type="password"
                 name="password"
@@ -58,7 +55,7 @@ class Login extends React.Component {
             <input type="submit" value="Log In" className="login" />
           </form>
         </div>
-      </>
+      </div>
     )
   }
 }

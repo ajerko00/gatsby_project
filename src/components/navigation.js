@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Image from "./image"
 
 import "../styles/navigation.css"
 
@@ -10,6 +11,13 @@ const Navigation = ({ menuItems }) => {
     </li>
   ))
 
-  return <ul>{menus}</ul>
+  return (
+    <div>
+      <ul>{menus}</ul>
+      <div className="slika">
+        <Image />
+      </div>
+    </div>
+  )
 }
 export default Navigation

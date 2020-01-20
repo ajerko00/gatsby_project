@@ -14,13 +14,8 @@
   position: absolute;
   max-height: 450px;
 
-  /* top: 15%;
-  left: 50%;
-  margin-left: -335px; */
-
   top: 110px;
   left: 50%;
-
   transform: translate(-50%, 0);
 }
 @media screen and (max-width: 1400px) {
@@ -49,18 +44,18 @@
     top: 7.5%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .NextRace {
-    top: 7%;
+    top: 8.5%;
     max-height: 250px;
     width: 380px;
     font-size: 1.1rem;
     line-height: 1.2rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   .NextRace {
-    top: 6.5%;
+    top: 8%;
     max-height: 215px;
     width: 330px;
     font-size: 0.95rem;
@@ -68,21 +63,31 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 450px) {
   .NextRace {
-    top: 6%;
+    top: 7%;
     max-height: 190px;
     width: 280px;
     font-size: 0.9rem;
     line-height: 0.95rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .NextRace {
+    top: 7%;
     max-height: 150px;
     width: 230px;
     font-size: 0.75rem;
     line-height: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .NextRace {
+    top: 6.5%;
+    max-height: 140px;
+    width: 215px;
+    font-size: 0.7rem;
+    line-height: 0.75rem;
   }
 }
 .NextRace p {
@@ -129,16 +134,3 @@
     line-height: 1.6rem;
   }
 }
-/* 
-#grid-container-teams {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  background-color: grey;
-  margin: 2em;
-}
-.grid-item-teams {
-  margin: 1em;
-  background-color: white;
-  padding: 1em;
-} */

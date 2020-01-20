@@ -13,6 +13,9 @@ button {
 table {
   margin: 0em 3em;
 }
+.drivers {
+  visibility: collapse;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -64,7 +67,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(110px);
   transform: translateX(162px);
 }
-
 /*------ ADDED CSS ---------*/
 .slider:after {
   content: "TEAMS";

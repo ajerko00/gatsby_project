@@ -10,14 +10,14 @@ const IndexPage = ({ data }) => {
     <div>
       <SEO title="Home" />
       <Layout />
+      <div className="test">
+        <Img className="asd" fluid={data.backGr.childImageSharp.fluid} />
 
-      <Img className="asd" fluid={data.backGr.childImageSharp.fluid} />
-
-      <div className="NextRace">
-        <Img fluid={data.BigOne.childImageSharp.fluid} />
-        <p>NEXT RACE: AUSTIN, USA 01 - 03 NOV</p>
+        <div className="NextRace">
+          <Img fluid={data.BigOne.childImageSharp.fluid} />
+          <p>NEXT RACE: AUSTIN, USA 01 - 03 NOV</p>
+        </div>
       </div>
-
       <div id="container-art">
         <Link to="/first-article" className="article">
           <Img className="artImg" fluid={data.article1.childImageSharp.fluid} />

@@ -23,7 +23,7 @@ const ImagesNav = () => {
   `)
 
   return (
-    <div className="grid-ikone">
+    <div id="grid-ikone">
       <Link to="/" className="ikone">
         <Img
           className="iconHome"
@@ -54,7 +54,7 @@ const ImagesNav = () => {
           fluid={data.allFile.edges[4].node.childImageSharp.fluid}
         />
       </Link>
-      <Link to="/Login" className="ikone">
+      <Link to="/app/login" className="ikone">
         <Img
           className="iconLogin"
           fluid={data.allFile.edges[5].node.childImageSharp.fluid}

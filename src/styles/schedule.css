@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   background-color: #f6f3f3;
-  margin: 1em;
+  margin: 0em 1em;
 }
 .grid-item-schedule {
   margin: 1em 1em 0em 1em;
@@ -24,10 +24,14 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #grid-container-schedule {
     grid-template-columns: 1fr 1fr;
-    margin: 0.5em;
+    margin: 0em 0.5em;
+    padding-top: 1em;
+  }
+  .grid-item-schedule {
+    margin: 0em 0.5em;
   }
   .grid-item-schedule p {
     font-size: 1.1rem;
@@ -36,7 +40,12 @@
 }
 @media screen and (max-width: 500px) {
   #grid-container-schedule {
-    grid-template-columns: 1fr;
     margin: 0em;
+  }
+  .grid-item-schedule {
+    margin: 0em 0.2em;
+  }
+  .grid-item-schedule p {
+    padding: 0.1em 0em 0em 0em;
   }
 }
