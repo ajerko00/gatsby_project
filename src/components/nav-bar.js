@@ -2,6 +2,7 @@ import React from "react"
 import { Link, navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
 import "../styles/login2.css"
+import Image from "./image"
 
 export default () => {
   const content = { login: true }
@@ -18,6 +19,8 @@ export default () => {
         justifyContent: "space-between",
       }}
     >
+      <Image />
+
       <nav>
         {` `}
         <ul className="navLogged">
