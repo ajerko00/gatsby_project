@@ -60,21 +60,3 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
-
-/* result.data.allMarkdownRemark.edges.forEach(edge => {
-  if (edge.node.frontmatter.posttype === 'project') {
-      createPage({
-          path: edge.node.frontmatter.path,
-          component: projectTemplate,
-          context: {}
-      });
-  }   
-  else {
-      createPage({
-          path: edge.node.frontmatter.path,
-          component: postTemplate,
-          context: {
-          },
-      })
-  }
-})     */

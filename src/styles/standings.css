@@ -1,87 +1,27 @@
-/* .button1 {
-  margin: 3em;
-}
-button {
-  color: black;
-  background-color: red;
-  border: red;
-  border-radius: 3px;
-} */
 .aaa {
   background-color: #f6f3f3;
 }
 table {
   margin: 0em 3em;
 }
-.drivers {
-  visibility: collapse;
-}
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 36px;
+#buttonDiv {
   margin: 1em;
+  /*   background-color: red;
+ */
+  max-width: 190px;
 }
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ca2222;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 40px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
+.driversButton,
+.teamsButton {
   background-color: #d80505;
+  color: white;
+  border: 1px #d80505 solid;
+  border-radius: 4px;
+  text-shadow: 1px 1px 4px black;
+  margin: 0.2em;
+  padding: 0.1em 0.5em;
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+.driversButton:hover,
+.teamsButton:hover {
+  transform: scale(1.06);
+  cursor: pointer;
 }
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(110px);
-  -ms-transform: translateX(110px);
-  transform: translateX(162px);
-}
-/*------ ADDED CSS ---------*/
-.slider:after {
-  content: "TEAMS";
-  color: black;
-  display: block;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  font-size: 22px;
-  font-family: Verdana, sans-serif;
-}
-
-input:checked + .slider:after {
-  content: "DRIVERS";
-}
-
-/*--------- END --------*/

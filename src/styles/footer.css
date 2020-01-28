@@ -1,0 +1,16 @@
+#footer {
+  position: absolute;
+  background-color: rgb(235, 225, 225);
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  margin-top: 1em;
+}
+.footerText {
+  position: absolute;
+  font-family: roboto;
+  font-size: 1.1rem;
+  color: black;
+  left: 45%;
+  top: 30%;
+}

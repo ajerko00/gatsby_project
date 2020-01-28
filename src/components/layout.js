@@ -1,11 +1,10 @@
 import React, { Fragment } from "react"
 import Navigation from "./navigation"
 import NavMob from "./navigationMob"
-import Image from "./image"
 import "../styles/layout.css"
 import Media from "react-media"
-import { getUser, isLoggedIn, logout } from "../services/auth"
-
+import { isLoggedIn } from "../services/auth"
+import Footer from "./footer"
 import NavBar from "./nav-bar"
 
 const menuItems = [

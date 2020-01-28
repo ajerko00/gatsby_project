@@ -10,6 +10,7 @@ const IndexPage = ({ data }) => {
     <div>
       <SEO title="Home" />
       <Layout />
+
       <div className="test">
         <Img className="asd" fluid={data.backGr.childImageSharp.fluid} />
 
