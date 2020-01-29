@@ -2,7 +2,8 @@
   background-color: #f6f3f3;
 }
 table {
-  margin: 0em 3em;
+  margin: 0em 2em 1em 2em;
+  max-width: 90%;
 }
 #buttonDiv {
   margin: 1em;
@@ -10,6 +11,7 @@ table {
  */
   max-width: 190px;
 }
+
 .driversButton,
 .teamsButton {
   background-color: #d80505;
@@ -24,4 +26,11 @@ table {
 .teamsButton:hover {
   transform: scale(1.06);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    margin: 0em 0em 1em 1em;
+    font-size: 0.8rem;
+  }
 }

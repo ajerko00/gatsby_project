@@ -11,16 +11,9 @@ export default function Template({ data }) {
     <div>
       <Layout />
       <h1>{post.frontmatter.title}</h1>
-      <div className="upper">
-        <div
-          className="text1"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+      <div className="text1" dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <Img className="slika-md" fluid={featuredImgFluid} />
-      </div>
-
-      <div className="text" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Img className="slika-md" fluid={featuredImgFluid} />
     </div>
   )
 }

@@ -1,18 +1,31 @@
 .LoginDiv {
-  background-image: url("../images/teams/background.jpg");
-  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4)),
+    url("../images/a/loginPic.jpg");
+  margin-top: 0.5em;
+  margin-left: -3em;
+}
+@media screen and (max-width: 800px) {
+  .LoginDiv {
+    background: #f0eaea;
+  }
 }
 .LoginForm {
+  opacity: 1;
+
   border: 1px solid black;
   width: 460px;
   height: 500px;
-  max-width: 90%;
+  max-width: 80%;
 
   position: absolute;
   top: 150px;
   left: 50%;
   margin-left: -230px;
   background-color: #d80505;
+
   border-radius: 4px;
   border: none;
 }
@@ -36,10 +49,12 @@ form {
 .LoginForm .username {
   margin: 0.5em;
   margin-top: 6em;
+  max-width: 45%;
 }
 .LoginForm .password {
   margin: 0.5em;
   margin-left: 0.8em;
+  max-width: 45%;
 }
 .LoginForm .login {
   position: relative;
@@ -54,4 +69,20 @@ form {
 .LoginForm .login:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .LoginForm {
+    max-width: 90%;
+    left: 5%;
+    margin: 0em;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .LoginForm {
+    height: 400px;
+  }
+  .LoginForm label {
+    margin-left: 1.5em;
+  }
 }

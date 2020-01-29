@@ -1,16 +1,10 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
-import { getUser, isLoggedIn, logout } from "../services/auth"
+import { isLoggedIn, logout } from "../services/auth"
 import "../styles/login2.css"
 import Image from "./image"
 
 export default () => {
-  const content = { login: true }
-  /*if (isLoggedIn()) {
-    content.message = `Hello, ${getUser().name}`
-  } else {
-    content.message = "You are not logged in"
-  } */
   return (
     <div
       style={{
