@@ -4,7 +4,10 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import "../styles/drivers.css"
+import Footer from "../components/footer"
 
+/* import Search from "../components/search"
+ */
 const Drivers = ({ data }) => {
   return (
     <div>
@@ -94,6 +97,7 @@ const Drivers = ({ data }) => {
           <p>Sebastian Vetteln</p>
         </Link>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "../styles/schedule.css"
+import Footer from "../components/footer"
 
 const Schedule = ({ data }) => {
   return (
@@ -99,6 +100,7 @@ const Schedule = ({ data }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/standings.css"
+import Footer from "../components/footer"
 
 class Standings extends Component {
   state = {
@@ -224,12 +225,8 @@ class Standings extends Component {
             </tr>
           </table>
         )}
-        {/* <button type="button" name="button1">
-        DRIVERS
-      </button>
-      <button type="button" name="button2">
-        TEAMS
-      </button> */}
+
+        <Footer />
       </div>
     )
   }

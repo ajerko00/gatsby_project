@@ -1,0 +1,28 @@
+nav {
+  height: 70px;
+}
+#navLogged {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navButtonLogged {
+  display: block;
+  padding: 0em 0em;
+  margin: 0 auto;
+}
+/* ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Roboto;
+}
+li {
+  display: block;
+  padding: 0em 0em;
+  margin: 0 auto;
+}
+li:hover {
+  transform: scale(1.05);
+}
+ */

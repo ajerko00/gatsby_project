@@ -4,10 +4,11 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import "../styles/teams.css"
+import Footer from "../components/footer"
 
 const Teams = ({ data }) => {
   return (
-    <div>
+    <>
       <Layout />
       <div className="teams_f1">
         <SEO title="Teams" />
@@ -45,7 +46,8 @@ const Teams = ({ data }) => {
           </Link>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }
 export default Teams

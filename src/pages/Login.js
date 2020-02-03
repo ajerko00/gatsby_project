@@ -1,8 +1,7 @@
 import React from "react"
 import Login from "../components/login"
-import Img from "gatsby-image"
 
-const log = ({ data }) => {
+const log = () => {
   return <Login />
 }
 export default log

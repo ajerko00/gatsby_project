@@ -4,13 +4,13 @@ import { graphql, Link } from "gatsby"
 import "../styles/index.css"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import Footer from "../components/footer"
 
 const IndexPage = ({ data }) => {
   return (
-    <div>
+    <>
       <SEO title="Home" />
       <Layout />
-
       <div className="test">
         <Img className="asd" fluid={data.backGr.childImageSharp.fluid} />
 
@@ -33,7 +33,8 @@ const IndexPage = ({ data }) => {
           <p>Young talent looking to challenge the old guard</p>
         </Link>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }
 

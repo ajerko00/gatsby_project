@@ -1,9 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, Link, navigate } from "gatsby"
+import { logout } from "../services/auth"
 import Img from "gatsby-image"
-import "../styles/images-nav.css"
+import "../styles/nav-mob.css"
 
-const ImagesNav = () => {
+const NavBarMob = () => {
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { absolutePath: { regex: "/src/images/layout/" } }) {
@@ -54,14 +55,54 @@ const ImagesNav = () => {
           fluid={data.allFile.edges[4].node.childImageSharp.fluid}
         />
       </Link>
-      <Link to="/app/login" className="ikone">
+      <Link
+        to="/app/login/"
+        className="ikone"
+        href="/"
+        onClick={event => {
+          event.preventDefault()
+          logout(() => navigate(`/app/login/`))
+        }}
+      >
         <Img
-          className="iconLogin"
-          fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+          className="iconLogout"
+          fluid={data.allFile.edges[6].node.childImageSharp.fluid}
         />
       </Link>
     </div>
   )
 }
 
-export default ImagesNav
+export default NavBarMob
+
+/* export const squareImage = graphql`
+  fragment squareImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+export const query = graphql`
+  query {
+    Home: file(relativePath: { eq: "layout/home.png" }) {
+      ...squareImage
+    }
+    Teams: file(relativePath: { eq: "layout/teams.png" }) {
+      ...squareImage
+    }
+    Drivers: file(relativePath: { eq: "layout/drivers.png" }) {
+      ...squareImage
+    }
+    Schedule: file(relativePath: { eq: "layout/schedule.png" }) {
+      ...squareImage
+    }
+    Standings: file(relativePath: { eq: "layout/standings.png" }) {
+      ...squareImage
+    }
+    Login: file(relativePath: { eq: "layout/login.png" }) {
+      ...squareImage
+    }
+  }
+` */

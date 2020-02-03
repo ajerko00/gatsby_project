@@ -12,12 +12,12 @@ const Navigation = ({ menuItems }) => {
   ))
 
   return (
-    <div>
+    <>
       <ul>{menus}</ul>
       <div className="slika">
         <Image />
       </div>
-    </div>
+    </>
   )
 }
 export default Navigation
