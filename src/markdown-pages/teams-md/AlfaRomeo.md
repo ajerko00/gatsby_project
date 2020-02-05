@@ -1,7 +1,6 @@
 ---
 path: "/AlfaRomeo"
 title: "Alfa Romeo"
-featuredImage: Lewis2.jpg
 posttype: team
 ---
 

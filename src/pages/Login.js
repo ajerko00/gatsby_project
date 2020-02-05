@@ -1,5 +1,6 @@
 import React from "react"
 import Login from "../components/login"
+import { graphql } from "gatsby"
 
 const log = () => {
   return <Login />

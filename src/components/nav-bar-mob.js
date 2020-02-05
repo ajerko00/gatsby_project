@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, Link, navigate } from "gatsby"
+import { useStaticQuery, Link, navigate, graphql } from "gatsby"
 import { logout } from "../services/auth"
 import Img from "gatsby-image"
 import "../styles/nav-mob.css"

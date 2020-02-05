@@ -1,7 +1,6 @@
 ---
 path: "/Ferrari"
 title: "Hamilton close to his 6h title"
-featuredImage: Lewis2.jpg
 posttype: team
 ---
 

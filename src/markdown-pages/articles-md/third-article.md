@@ -1,7 +1,6 @@
 ---
 path: "/third-article"
 title: "Young talent looking to challenge the old guard"
-featuredImage: Leclerc.jpg
 posttype: "article"
 ---
 
