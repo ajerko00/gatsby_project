@@ -13,7 +13,7 @@ export const isTextLogout = ({ text }) => {
 
 const navBar = ({ menuItemsLogged }) => {
   const menus = menuItemsLogged.map(({ link, text }) => (
-    <li key={link}>
+    <li className="li-layout" key={link}>
       {isTextLogout({ text }) ? (
         <a
           href="/"
@@ -32,7 +32,7 @@ const navBar = ({ menuItemsLogged }) => {
 
   return (
     <>
-      <ul>{menus}</ul>
+      <ul className="ul-layout">{menus}</ul>
       <div className="slika">
         <Image />
       </div>

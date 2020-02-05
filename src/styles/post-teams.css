@@ -1,10 +1,57 @@
-.sadrzaj-teams ul {
+/* .sadrzaj-teams ul {
   display: block;
 }
 .sadrzaj-teams li {
   display: inline;
+} */
+.post-teams {
+  background-color: #f6f3f3;
+}
+.sadrzaj-teams {
+  padding: 2em 0em;
+  width: 1500px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#upper {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  padding-bottom: 2em;
 }
 #aboutTeam {
-  border: 1px solid black;
-  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-family: Roboto;
+  max-width: fit-content;
+}
+.sadrzaj-teams img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+#TeamHistory {
+  margin-top: 2em;
+  width: 100%;
+}
+@media screen and (max-width: 1550px) {
+  .sadrzaj-teams {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  #upper {
+    grid-template-columns: auto 500px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #upper {
+    grid-template-columns: 1fr;
+  }
+  .sadrzaj-teams {
+    padding: 1em 0em;
+  }
+  #TeamHistory {
+    margin-top: 0.5em;
+  }
 }

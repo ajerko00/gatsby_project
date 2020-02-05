@@ -10,8 +10,6 @@ export default function Template({ data }) {
   return (
     <div className="post-teams">
       <Layout />
-      <h1>{post.frontmatter.title}</h1>
-
       <div
         className="sadrzaj-teams"
         dangerouslySetInnerHTML={{ __html: post.html }}

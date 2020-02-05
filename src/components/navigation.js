@@ -6,14 +6,14 @@ import "../styles/navigation.css"
 
 const Navigation = ({ menuItems }) => {
   const menus = menuItems.map(({ link, text }) => (
-    <li key={link}>
+    <li key={link} className="li-layout">
       <Link to={link}>{text}</Link>
     </li>
   ))
 
   return (
     <>
-      <ul>{menus}</ul>
+      <ul className="ul-layout">{menus}</ul>
       <div className="slika">
         <Image />
       </div>
