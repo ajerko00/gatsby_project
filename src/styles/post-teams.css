@@ -1,0 +1,10 @@
+.sadrzaj-teams ul {
+  display: block;
+}
+.sadrzaj-teams li {
+  display: inline;
+}
+#aboutTeam {
+  border: 1px solid black;
+  max-width: 500px;
+}

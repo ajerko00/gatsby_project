@@ -9,6 +9,7 @@
   background-color: white;
   padding: 1em;
   border-radius: 3px;
+  max-height: 240px;
 }
 @media screen and (max-width: 1100px) {
   #grid-container-teams {

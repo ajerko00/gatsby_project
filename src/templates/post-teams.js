@@ -1,43 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import "../styles/post-teams.css"
+import Footer from "../components/footer"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
-  let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+
   return (
-    <div>
+    <div className="post-teams">
       <Layout />
       <h1>{post.frontmatter.title}</h1>
-      <div className="upper">
-        <div
-          className="text1"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
 
-        <Img className="slika-md" fluid={featuredImgFluid} />
-      </div>
-
-      <div className="text" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div
+        className="sadrzaj-teams"
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
+      <Footer />
     </div>
   )
 }
 
 export const query = graphql`
-  query postQueryAndPostQueryAndPostQueryAndPostQuery($path: String!) {
+  query postTeamsQuery($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         title
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }

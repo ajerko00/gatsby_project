@@ -24,9 +24,23 @@ module.exports = {
       },
     },
 
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              wrapperStyle:
+                " margin-left: 0!important; margin-right: 0!important;",
+            },
+          },
+        ],
+      },
+    },
 
     {
       resolve: `@debiki/gatsby-plugin-talkyard`,

@@ -15,3 +15,12 @@
   left: 45%;
   top: 40%;
 }
+@media screen and (max-width: 800px) {
+  #footer {
+    height: 100px;
+    margin-top: 2em;
+  }
+  .footerText {
+    left: 40%;
+  }
+}
