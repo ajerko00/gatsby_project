@@ -1,0 +1,60 @@
+.post-drivers {
+  background-color: #f6f3f3;
+}
+.sadrzaj-drivers {
+  padding: 2em 0em;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#upperPart {
+  max-height: 350px;
+  background-color: #f6f3f3;
+
+  display: grid;
+  grid-template-columns: auto 290px;
+
+  padding-bottom: 2em;
+}
+#DriverInfo {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  font-family: Roboto;
+  max-width: fit-content;
+}
+.sadrzaj-drivers img {
+  background-color: #f6f3f3;
+  object-fit: cover;
+  object-position: 100%;
+  max-height: 290px;
+}
+#Biography {
+  margin-top: 1em;
+  width: 100%;
+}
+@media screen and (max-width: 1250px) {
+  .sadrzaj-drivers {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #upperPart {
+    grid-template-columns: 1fr;
+  }
+  .sadrzaj-drivers img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .sadrzaj-drivers {
+    padding: 1em 0em;
+  }
+  #Biography {
+    margin-top: 280px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Biography {
+    margin-top: 240px;
+  }
+}

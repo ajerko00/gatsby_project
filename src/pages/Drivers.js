@@ -94,7 +94,7 @@ const Drivers = ({ data }) => {
         </Link>
         <Link to="/Vettel" className="grid-item-drivers">
           <Img fluid={data.Vettel.childImageSharp.fluid} />
-          <p>Sebastian Vetteln</p>
+          <p>Sebastian Vettel</p>
         </Link>
       </div>
       <Footer />
