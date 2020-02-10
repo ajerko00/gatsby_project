@@ -28,11 +28,19 @@
 
   margin: 1em 0em;
 }
+.just-comments {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 0em 1em;
+}
 @media screen and (max-width: 1050px) {
   .post h1 {
     width: 95%;
   }
   .sadrzaj {
+    width: 95%;
+  }
+  .just-comments {
     width: 95%;
   }
 }
