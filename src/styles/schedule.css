@@ -19,6 +19,19 @@
 
   padding: 0.3em 0em 0em 0.5em;
 }
+.swiper-schedule p {
+  color: darkblue;
+
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+
+  padding: 0.3em 0em 1em 0.3em;
+}
+@media screen and (min-width: 600px) {
+  .swiper-schedule-container {
+    display: none;
+  }
+}
 @media screen and (max-width: 1400px) {
   #grid-container-schedule {
     grid-template-columns: 1fr 1fr 1fr;
@@ -38,14 +51,11 @@
     line-height: 1.15rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #grid-container-schedule {
-    margin: 0em;
+    display: none;
   }
-  .grid-item-schedule {
-    margin: 0em 0.2em;
-  }
-  .grid-item-schedule p {
-    padding: 0.1em 0em 0em 0em;
+  .swiper-container {
+    margin-top: 1em;
   }
 }

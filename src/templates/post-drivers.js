@@ -22,10 +22,11 @@ export default function Template({ data }) {
 export const query = graphql`
   query postDriversQuery($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
       frontmatter {
         title
+        path
       }
+      html
     }
   }
 `

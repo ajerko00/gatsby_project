@@ -1,6 +1,6 @@
 ---
 path: "/Verstappen"
-title: "Hamilton close to his 6h title"
+title: "Max Verstappen"
 posttype: driver
 ---
 
