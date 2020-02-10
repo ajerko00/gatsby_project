@@ -86,13 +86,6 @@ module.exports = {
     },
 
     {
-      resolve: `@debiki/gatsby-plugin-talkyard`,
-      options: {
-        talkyardServerUrl: "https://comments-demo.talkyard.io",
-      },
-    },
-
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
