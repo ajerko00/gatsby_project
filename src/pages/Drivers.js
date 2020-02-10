@@ -7,9 +7,7 @@ import { graphql, Link } from "gatsby"
 import "../styles/drivers.css"
 import Footer from "../components/footer"
 import "swiper///css/swiper.css"
-import Media from "react-media"
 
-/*  import Slider from "../components/slider" */
 /* import App from "../components/search"
  */
 

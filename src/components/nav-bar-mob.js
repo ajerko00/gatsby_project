@@ -60,8 +60,10 @@ const NavBarMob = () => {
         className="ikone"
         href="/"
         onClick={event => {
-          event.preventDefault()
-          logout(() => navigate(`/app/login/`))
+          if (window.confirm("Are you sure you want to log out?")) {
+            event.preventDefault()
+            logout(() => navigate(`/app/login/`))
+          }
         }}
       >
         <Img

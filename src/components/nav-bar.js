@@ -18,8 +18,10 @@ const navBar = ({ menuItemsLogged }) => {
         <a
           href="/"
           onClick={event => {
-            event.preventDefault()
-            logout(() => navigate(`/app/login/`))
+            if (window.confirm("Are you sure you want to log out?")) {
+              event.preventDefault()
+              logout(() => navigate(`/app/login/`))
+            }
           }}
         >
           Logout
@@ -40,54 +42,3 @@ const navBar = ({ menuItemsLogged }) => {
   )
 }
 export default navBar
-
-/* export default menuItemsLogged => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        flex: "1",
-        justifyContent: "space-between",
-      }}
-    >
-      <Image />
-
-      <ul id="navLogged">
-        <li className="navButtonLogged">
-          {" "}
-          <Link to="/">Home</Link>
-        </li>
-        <li className="navButtonLogged">
-          {" "}
-          <Link to="/Teams">Teams</Link>
-        </li>
-        <li className="navButtonLogged">
-          {" "}
-          <Link to="/Drivers">Drivers</Link>
-        </li>
-        <li className="navButtonLogged">
-          {" "}
-          <Link to="/Schedule">Schedule</Link>
-        </li>
-        <li className="navButtonLogged">
-          {" "}
-          <Link to="/Standings">Standings</Link>
-        </li>
-        <li className="navButtonLogged">
-          {isLoggedIn() ? (
-            <a
-              href="/"
-              onClick={event => {
-                event.preventDefault()
-                logout(() => navigate(`/app/login/`))
-              }}
-            >
-              Logout
-            </a>
-          ) : null}
-        </li>
-      </ul>
-    </div>
-  )
-}
- */
