@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 .li-layout:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .li-layout.active {
   border-bottom: 1px solid white;

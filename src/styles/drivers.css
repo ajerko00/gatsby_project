@@ -20,6 +20,10 @@
   background-color: white;
   border: 1px solid rgb(230, 219, 219);
 }
+.grid-item-drivers:hover {
+  transform: scale(1.1);
+}
+
 #grid-container-drivers img {
   margin: 0em;
   border-top-left-radius: 7px;

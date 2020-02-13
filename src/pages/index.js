@@ -22,15 +22,15 @@ const IndexPage = ({ data }) => {
       <div id="container-art">
         <Link to="/first-article" className="article">
           <Img className="artImg" fluid={data.article1.childImageSharp.fluid} />
-          <p>Exciting week in Mexico City</p>
+          <h2>Exciting week in Mexico City</h2>
         </Link>
         <Link to="/second-article" className="article">
           <Img className="artImg" fluid={data.article2.childImageSharp.fluid} />
-          <p>Hamilton close to his 6th title</p>
+          <h2>Hamilton close to his 6th title</h2>
         </Link>
         <Link to="/third-article" className="article">
           <Img className="artImg" fluid={data.article3.childImageSharp.fluid} />
-          <p>Young talent looking to challenge the old guard</p>
+          <h2>Young talent looking to challenge the old guard</h2>
         </Link>
       </div>
       <Footer />
