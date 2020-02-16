@@ -1,6 +1,6 @@
 ---
 path: "/Bottas"
-title: "Hamilton close to his 6h title"
+title: "Valtteri Bottas"
 posttype: driver
 ---
 

@@ -1,6 +1,6 @@
 ---
 path: "/Leclerc"
-title: "Hamilton close to his 6h title"
+title: "Charles Leclerc"
 posttype: driver
 ---
 

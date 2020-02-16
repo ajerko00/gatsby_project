@@ -1,4 +1,7 @@
 module.exports = [{
+      plugin: require('../node_modules/gatsby-plugin-flexsearch/gatsby-browser.js'),
+      options: {"plugins":[],"languages":["en"],"type":"MarkdownRemark","fields":[{"name":"title","indexed":true,"resolver":"frontmatter.title","attributes":{"encode":"balance","tokenize":"strict","threshold":6,"depth":3},"store":true},{"name":"description","indexed":true,"resolver":"html","attributes":{"encode":"balance","tokenize":"strict","threshold":6,"depth":3},"store":true},{"name":"image","indexed":false,"resolver":"internal.content.img","attributes":{"encode":"balance","tokenize":"strict","threshold":6,"depth":3},"store":true},{"name":"url","indexed":false,"resolver":"frontmatter.path","store":true},{"name":"posttype","indexed":false,"resolver":"frontmatter.posttype","store":true}]},
+    },{
       plugin: require('../node_modules/gatsby-remark-images/gatsby-browser.js'),
       options: {"plugins":[],"wrapperStyle":" margin-left: 0!important; margin-right: 0!important;"},
     },{

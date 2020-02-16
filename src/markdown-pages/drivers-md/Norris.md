@@ -1,6 +1,6 @@
 ---
 path: "/Norris"
-title: "Hamilton close to his 6h title"
+title: "Lando Norris"
 posttype: driver
 ---
 

@@ -1,6 +1,6 @@
 ---
 path: "/Gasly"
-title: "Hamilton close to his 6h title"
+title: "Pierre Gasly"
 posttype: driver
 ---
 

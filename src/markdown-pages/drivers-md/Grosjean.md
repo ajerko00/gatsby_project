@@ -1,6 +1,6 @@
 ---
 path: "/Grosjean"
-title: "Hamilton close to his 6h title"
+title: "Romain Grosjean"
 posttype: driver
 ---
 

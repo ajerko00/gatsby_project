@@ -1,6 +1,6 @@
 ---
 path: "/Magnussen"
-title: "Hamilton close to his 6h title"
+title: "Kevin Magnussen"
 posttype: driver
 ---
 

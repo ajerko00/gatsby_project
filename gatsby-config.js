@@ -6,7 +6,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    /*  {
+    {
       resolve: "gatsby-plugin-flexsearch",
       options: {
         // L
@@ -37,17 +37,35 @@ module.exports = {
               threshold: 6,
               depth: 3,
             },
-            store: false,
+            store: true,
+          },
+          {
+            name: "image",
+            indexed: false,
+            resolver: "internal.content.img",
+            attributes: {
+              encode: "balance",
+              tokenize: "strict",
+              threshold: 6,
+              depth: 3,
+            },
+            store: true,
           },
           {
             name: "url",
             indexed: false,
-            resolver: "fields.$path",
+            resolver: "frontmatter.path",
+            store: true,
+          },
+          {
+            name: "posttype",
+            indexed: false,
+            resolver: "frontmatter.posttype",
             store: true,
           },
         ],
       },
-    }, */
+    },
 
     `gatsby-plugin-react-helmet`,
 

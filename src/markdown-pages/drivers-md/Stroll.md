@@ -1,6 +1,6 @@
 ---
 path: "/Stroll"
-title: "Hamilton close to his 6h title"
+title: "Lance Stroll"
 posttype: driver
 ---
 

@@ -1,6 +1,6 @@
 ---
 path: "/Perez"
-title: "Hamilton close to his 6h title"
+title: "Sergio Perez"
 posttype: driver
 ---
 

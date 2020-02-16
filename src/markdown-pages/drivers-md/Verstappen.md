@@ -2,6 +2,7 @@
 path: "/Verstappen"
 title: "Max Verstappen"
 posttype: driver
+imagePath: "/pics-drivers/"
 ---
 
 <div id = "upperPart">

@@ -1,6 +1,6 @@
 ---
 path: "/Russell"
-title: "Hamilton close to his 6h title"
+title: "George Russell"
 posttype: driver
 ---
 

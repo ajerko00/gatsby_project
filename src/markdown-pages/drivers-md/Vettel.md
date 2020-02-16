@@ -1,6 +1,6 @@
 ---
 path: "/Vettel"
-title: "Hamilton close to his 6h title"
+title: "Sebastian Vettel"
 posttype: driver
 ---
 

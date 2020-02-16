@@ -1,6 +1,6 @@
 ---
 path: "/Raikkonen"
-title: "Hamilton close to his 6h title"
+title: "Kimi Räikkönen"
 posttype: driver
 ---
 
