@@ -10,8 +10,7 @@ const NavBarMob = () => {
       allFile(filter: { absolutePath: { regex: "/src/images/layout/" } }) {
         edges {
           node {
-            id
-            base
+            name
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -28,31 +27,28 @@ const NavBarMob = () => {
       <Link to="/" className="ikone">
         <Img
           className="iconHome"
-          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+          fluid={data.allFile.edges.node.name["home.png"]}
         />
       </Link>
       <Link to="/Teams" className="ikone">
-        <Img
-          className="iconTeams"
-          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-        />
+        <Img className="iconTeams" fluid={data.allFile.edges.node["2_teams"]} />
       </Link>
       <Link to="/Drivers" className="ikone">
         <Img
           className="iconDrivers"
-          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+          fluid={data.allFile.edges.node["3_drivers"]}
         />
       </Link>
       <Link to="/Schedule" className="ikone">
         <Img
           className="iconSchedule"
-          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+          fluid={data.allFile.edges.node.name["4_schedule"]}
         />
       </Link>
       <Link to="/Standings" className="ikone">
         <Img
           className="iconStandings"
-          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+          fluid={data.allFile.edges.node.name["5_standings"]}
         />
       </Link>
       <Link
@@ -68,7 +64,7 @@ const NavBarMob = () => {
       >
         <Img
           className="iconLogout"
-          fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+          fluid={data.allFile.edges.node.name["logout"]}
         />
       </Link>
     </div>

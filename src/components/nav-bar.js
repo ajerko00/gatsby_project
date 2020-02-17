@@ -17,6 +17,8 @@ const navBar = ({ menuItemsLogged }) => {
       {isTextLogout({ text }) ? (
         <a
           href="/"
+          class="active"
+          className="li-act"
           onClick={event => {
             if (window.confirm("Are you sure you want to log out?")) {
               event.preventDefault()
@@ -27,7 +29,9 @@ const navBar = ({ menuItemsLogged }) => {
           Logout
         </a>
       ) : (
-        <Link to={link}>{text}</Link>
+        <Link activeClassName="active" className="li-act" to={link}>
+          {text}
+        </Link>
       )}
     </li>
   ))

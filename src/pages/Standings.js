@@ -37,7 +37,7 @@ class Standings extends Component {
 
         {this.state.isActive && (
           <table type="width:100%" className="drivers">
-            <tr>
+            <tr className="info">
               <th></th>
               <th>DRIVERS</th>
               <th>TEAMS</th>
@@ -167,7 +167,7 @@ class Standings extends Component {
         )}
         {!this.state.isActive && (
           <table type="width:100%" className="teams">
-            <tr>
+            <tr className="info">
               <th></th>
 
               <th>TEAMS</th>

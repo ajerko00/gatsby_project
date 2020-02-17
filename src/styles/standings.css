@@ -26,7 +26,13 @@ table {
   transform: scale(1.06);
   cursor: pointer;
 }
-
+tr:hover {
+  color: red;
+}
+.info:hover,
+.info {
+  color: black;
+}
 @media screen and (max-width: 600px) {
   table {
     margin: 0em 0em 1em 1em;

@@ -7,7 +7,9 @@ import "../styles/navigation.css"
 const Navigation = ({ menuItems }) => {
   const menus = menuItems.map(({ link, text }) => (
     <li key={link} className="li-layout">
-      <Link to={link}>{text}</Link>
+      <Link activeClassName="active" className="li-act" to={link}>
+        {text}
+      </Link>
     </li>
   ))
 
