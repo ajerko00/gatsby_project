@@ -1,6 +1,6 @@
 ---
 path: "/second-article"
-title: "Hamilton close to his 6h title"
+title: "Hamilton close to his 6th title"
 posttype: "article"
 ---
 

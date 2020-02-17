@@ -16,7 +16,10 @@ class Login extends React.Component {
   }
   handleSubmit = event => {
     event.preventDefault()
-    handleLogin(this.state)
+    if (handleLogin(this.state) === false) {
+      window.alert("Wrong Username or Passsword")
+      navigate("/app/login")
+    } else navigate(`/`)
   }
   render() {
     if (isLoggedIn()) {
@@ -31,7 +34,6 @@ class Login extends React.Component {
             method="post"
             onSubmit={event => {
               this.handleSubmit(event)
-              navigate(`/`)
             }}
           >
             <label>
