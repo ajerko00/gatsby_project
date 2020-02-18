@@ -29,7 +29,7 @@ const Drivers = ({ data }) => {
 
       <SEO title="Drivers" />
 
-      <Search driver={data} driver2={data.driverInfo.edges} />
+      <Search id="search" driver={data} driver2={data.driverInfo.edges} />
 
       <Swiper {...params} className="swiper-drivers-container">
         <Link to="/Hamilton" className="swiper-drivers">
@@ -226,152 +226,133 @@ export class DriversGrid2 extends React.Component {
           <p>Lewis Hamilton </p>
         </Link>
       )
-    }
-    if (this.props.driver === "Bottas") {
+    } else if (this.props.driver === "Bottas") {
       return (
         <Link to="/Bottas" className="grid-item-drivers">
           <Img fluid={this.props.data.Bottas.childImageSharp.fluid} />
           <p>Valtteri Bottas</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Vettel") {
+    } else if (this.props.driver === "Vettel") {
       return (
         <Link to="/Vettel" className="grid-item-drivers">
           <Img fluid={this.props.data.Vettel.childImageSharp.fluid} />
           <p>Sebastian Vettel</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Leclerc") {
+    } else if (this.props.driver === "Leclerc") {
       return (
         <Link to="/Leclerc" className="grid-item-drivers">
           <Img fluid={this.props.data.Leclerc.childImageSharp.fluid} />
           <p>Charles Leclerc</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Verstappen") {
+    } else if (this.props.driver === "Verstappen") {
       return (
         <Link to="/Verstappen" className="grid-item-drivers">
           <Img fluid={this.props.data.Verstappen.childImageSharp.fluid} />
           <p>Max Verstappen</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Albon") {
+    } else if (this.props.driver === "Albon") {
       return (
         <Link to="/Albon" className="grid-item-drivers">
           <Img fluid={this.props.data.Albon.childImageSharp.fluid} />
           <p>Alexander Albon</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Norris") {
+    } else if (this.props.driver === "Norris") {
       return (
         <Link to="/Norris" className="grid-item-drivers">
           <Img fluid={this.props.data.Norris.childImageSharp.fluid} />
           <p>Lando Norris</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Sainz") {
+    } else if (this.props.driver === "Sainz") {
       return (
         <Link to="/Sainz" className="grid-item-drivers">
           <Img fluid={this.props.data.Sainz.childImageSharp.fluid} />
           <p>Carlos Sainz</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Hulkenberg") {
+    } else if (this.props.driver === "Hulkenberg") {
       return (
         <Link to="/Hulkenberg" className="grid-item-drivers">
           <Img fluid={this.props.data.Hulkenberg.childImageSharp.fluid} />
           <p>Nico Hulkenberg</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Ricciardo") {
+    } else if (this.props.driver === "Ricciardo") {
       return (
         <Link to="/Ricciardo" className="grid-item-drivers">
           <Img fluid={this.props.data.Ricciardo.childImageSharp.fluid} />
           <p>Daniel Ricciardo</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Gasly") {
+    } else if (this.props.driver === "Gasly") {
       return (
         <Link to="/Gasly" className="grid-item-drivers">
           <Img fluid={this.props.data.Gasly.childImageSharp.fluid} />
           <p>Pierre Gasly</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Kvyat") {
+    } else if (this.props.driver === "Kvyat") {
       return (
         <Link to="/Kvyat" className="grid-item-drivers">
           <Img fluid={this.props.data.Kvyat.childImageSharp.fluid} />
           <p>Daniil Kvyat</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Perez") {
+    } else if (this.props.driver === "Perez") {
       return (
         <Link to="/Perez" className="grid-item-drivers">
           <Img fluid={this.props.data.Perez.childImageSharp.fluid} />
           <p>Sergio Perez</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Stroll") {
+    } else if (this.props.driver === "Stroll") {
       return (
         <Link to="/Stroll" className="grid-item-drivers">
           <Img fluid={this.props.data.Stroll.childImageSharp.fluid} />
           <p>Lance Stroll</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Giovinazzi") {
+    } else if (this.props.driver === "Giovinazzi") {
       return (
         <Link to="/Giovinazzi" className="grid-item-drivers">
           <Img fluid={this.props.data.Giovinazzi.childImageSharp.fluid} />
           <p>Antonio Giovinazzi</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Raikkonen") {
+    } else if (this.props.driver === "Raikkonen") {
       return (
         <Link to="/Raikkonen" className="grid-item-drivers">
           <Img fluid={this.props.data.Raikkonen.childImageSharp.fluid} />
           <p>Kimi Räikkönen</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Grosjean") {
+    } else if (this.props.driver === "Grosjean") {
       return (
         <Link to="/Grosjean" className="grid-item-drivers">
           <Img fluid={this.props.data.Grosjean.childImageSharp.fluid} />
           <p>Romain Grosjean</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Magnussen") {
+    } else if (this.props.driver === "Magnussen") {
       return (
         <Link to="/Magnussen" className="grid-item-drivers">
           <Img fluid={this.props.data.Magnussen.childImageSharp.fluid} />
           <p>Kevin Magnussen</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Kubica") {
+    } else if (this.props.driver === "Kubica") {
       return (
         <Link to="/Kubica" className="grid-item-drivers">
           <Img fluid={this.props.data.Kubica.childImageSharp.fluid} />
           <p>Robert Kubica</p>
         </Link>
       )
-    }
-    if (this.props.driver === "Russell") {
+    } else if (this.props.driver === "Russell") {
       return (
         <Link to="/Russell" className="grid-item-drivers">
           <Img fluid={this.props.data.Russell.childImageSharp.fluid} />

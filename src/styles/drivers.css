@@ -1,3 +1,8 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
 #drivers {
   background-color: #f6f3f3;
 }
@@ -6,6 +11,7 @@
   visibility: collapse;
 }
 #grid-container-drivers {
+  min-width: 1300px;
   margin: 1em 0.5em;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -20,6 +26,7 @@
   background-color: white;
   border: 1px solid rgb(230, 219, 219);
 }
+
 .grid-item-drivers:hover p {
   color: #d80505;
 }
@@ -68,6 +75,8 @@
 
 @media screen and (max-width: 1300px) {
   #grid-container-drivers {
+    min-width: 100%;
+    width: 100%;
     max-width: 100%;
   }
 }

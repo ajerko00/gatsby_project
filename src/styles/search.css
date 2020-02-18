@@ -1,78 +1,57 @@
-.heading {
-  font-size: 30px;
-  padding: 16px 0;
-  color: #444;
-  text-align: center;
-} /*Container*/
-.container {
-  margin: 36px auto;
-  width: 100%;
-  max-width: 800px;
-}
-.search-label {
-  position: relative;
-}
-.container input {
-  width: 100%;
-  padding: 16px;
-  font-size: 36px;
-  font-style: italic;
-  color: #444;
-  box-sizing: border-box;
-  outline: none;
-}
-.search-icon {
-  position: absolute;
-  top: -10px;
-  font-size: 24px;
-  color: #555;
-  right: 18px;
-}
-/* Results */
-.results-container {
-  display: flex;
-  flex-flow: wrap;
-}
-.result-items {
-  position: relative;
-  padding: 16px;
-  border: 1px solid #898989;
-  margin: 16px;
-  text-align: center;
-  min-width: 200px;
-  text-decoration: none;
-  box-shadow: 2px 2px 2px #898989;
-}
-.image-username {
-  color: coral;
-  font-size: 18px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 5px 10px;
-}
-.image {
-  width: 100%;
-  height: 200px;
-}
-.image-wrapper {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  height: 100%;
+.searchDiv {
+  display: grid;
+  align-items: left;
+  margin: 0em 0em;
   justify-content: center;
-} /*Loader*/
-.search-loading {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-} /*Show and hide*/
-.show {
-  display: inline-block;
 }
-.hide {
-  display: none;
+.input {
+  position: relative;
+  padding: 3px 10px;
+  width: 230px;
+  border-radius: 10px;
+  top: 30px;
+  margin-left: 1.8em;
+  margin-bottom: 2em;
+}
+#noDrivers {
+  margin-left: 1.2em;
+  padding-top: 1em;
+  font-size: 30px;
+}
+.searchDiv2 {
+  position: relative;
+  width: 1300px;
+  align-items: left;
+  justify-content: center;
+
+  margin: 0em 0em;
+}
+@media screen and (max-width: 1300px) {
+  .searchDiv2 {
+    left: 1.2%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .searchDiv2 {
+    left: 1.2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #grid-container-drivers {
+    display: none;
+  }
+  .swiper-drivers-container {
+    margin-top: 1em;
+  }
+}
+
+#grid-container-drivers2 {
+  min-width: 1300px;
+  margin: 1em 0.5em;
+  display: grid;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 1em;
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { DriversGrid, DriversGrid2 } from "../pages/Drivers"
+import "../styles/search.css"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -32,6 +33,8 @@ class List extends React.Component {
     this.state = {
       filtered: [],
     }
+    this.notEmpty = false
+
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -52,11 +55,10 @@ class List extends React.Component {
     let currentList = []
     // Variable to hold the filtered list before putting into state
     let newList = []
-
+    this.notEmpty = true
     // If the search bar isn't empty
     if (e.target.value !== "") {
       // Assign the original list to currentList
-
       currentList = this.props.items
 
       // Use .filter() to determine which items should be displayed
@@ -74,7 +76,9 @@ class List extends React.Component {
     } else {
       // If the search bar is empty, set newList to original task list
       newList = 0
+      this.notEmpty = false
     }
+
     // Set the filtered state based on what our rules added to newList
     this.setState({
       filtered: newList,
@@ -84,12 +88,12 @@ class List extends React.Component {
   render() {
     if (this.state.filtered.length > 0) {
       return (
-        <div>
+        <div className="searchDiv">
           <input
             type="text"
             className="input"
             onChange={this.handleChange}
-            placeholder="Search..."
+            placeholder="Search drivers..."
           />
 
           <div id="grid-container-drivers">
@@ -102,14 +106,27 @@ class List extends React.Component {
           </div>
         </div>
       )
-    } else {
+    } else if (this.notEmpty === true) {
       return (
-        <div>
+        <div className="searchDiv2">
           <input
             type="text"
             className="input"
             onChange={this.handleChange}
-            placeholder="Search..."
+            placeholder="Search drivers..."
+          />
+          <p id="noDrivers">No drivers found</p>
+          <div id="grid-container-drivers2"></div>
+        </div>
+      )
+    } else {
+      return (
+        <div className="searchDiv">
+          <input
+            type="text"
+            className="input"
+            onChange={this.handleChange}
+            placeholder="Search drivers..."
           />
           <DriversGrid driver={this.props.list0} />
         </div>
