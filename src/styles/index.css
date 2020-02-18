@@ -14,7 +14,7 @@
   border: 2px solid;
   position: absolute;
   max-height: 450px;
-
+  text-align: center;
   top: 110px;
   left: 50%;
   transform: translate(-50%, 0);
@@ -29,65 +29,77 @@
 }
 @media screen and (max-width: 950px) {
   .NextRace {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    max-height: 360px;
-    width: 550px;
-    top: 95px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .NextRace {
-    font-size: 1.35rem;
-    line-height: 1.45rem;
-    max-height: 305px;
-    width: 460px;
-    top: 70px;
-  }
-}
-@media screen and (max-width: 630px) {
-  .NextRace {
+    height: 435px;
+
+    max-width: 100%;
     top: 80px;
-    max-height: 250px;
-    width: 380px;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
   }
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 850px) {
   .NextRace {
-    top: 75px;
-    max-height: 215px;
-    width: 330px;
-    font-size: 0.95rem;
-    line-height: 1rem;
+    top: 48px;
+    width: 100%;
+    height: auto;
+    padding: 0em;
+    border: unset;
+    background-color: unset;
+  }
+  .asd img {
+    display: none;
+  }
+  .test {
+    margin-bottom: 100px;
+  }
+  .NextRace p {
+    border-bottom: 2px solid black;
+    background-color: #edecec;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   .NextRace {
-    top: 65px;
-    max-height: 190px;
-    width: 280px;
-    font-size: 0.9rem;
-    line-height: 0.95rem;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    top: 48px;
   }
 }
+@media screen and (max-width: 620px) {
+  .NextRace {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .NextRace {
+    top: 58px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .NextRace {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  .test {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .NextRace {
+    top: 56px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .NextRace {
-    max-height: 150px;
-    width: 230px;
-    font-size: 0.75rem;
-    line-height: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
   }
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 350px) {
   .NextRace {
-    top: 60px;
-    max-height: 140px;
-    width: 215px;
-    font-size: 0.7rem;
-    line-height: 0.75rem;
+    top: 51px;
   }
 }
 .NextRace p {

@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   background-image: url("../images/teams/background.jpg");
+  padding: 0 220px;
 }
 .grid-item-teams {
   margin: 1em;
@@ -13,6 +14,16 @@
 }
 .grid-item-teams:hover {
   transform: scale(1.1);
+}
+@media screen and (max-width: 1600px) {
+  #grid-container-teams {
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #grid-container-teams {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1100px) {
   #grid-container-teams {

@@ -63,6 +63,9 @@ export const squareImage = graphql`
 `
 export const query = graphql`
   query {
+    BackgroundImage: file(relativePath: { eq: "teams/background.jpg" }) {
+      ...squareImage
+    }
     AlfaRomeo: file(relativePath: { eq: "teams/AlfaRomeo.jpg" }) {
       ...squareImage
     }
