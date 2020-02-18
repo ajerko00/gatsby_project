@@ -42,31 +42,23 @@
   transform: scale(1.1);
 }
 .iconHome {
-  min-height: 100%;
   color: black;
   z-index: 10000000000000;
 }
 .iconTeams {
   transform: scale(1.15);
-  min-height: 100%;
 }
 .iconDrivers {
   transform: scale(0.9);
   margin-top: -0.15em;
-  min-height: 100%;
 }
 .iconSchedule {
   transform: scale(0.85);
-  min-height: 100%;
 }
-.iconStandings {
-  min-height: 100%;
-}
+
 .iconLogin {
   transform: scale(0.9);
-  min-height: 100%;
 }
 .iconLogout {
   transform: scale(0.9);
-  min-height: 100%;
 }

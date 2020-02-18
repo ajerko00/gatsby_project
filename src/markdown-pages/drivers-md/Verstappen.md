@@ -2,7 +2,6 @@
 path: "/Verstappen"
 title: "Max Verstappen"
 posttype: driver
-imagePath: "/pics-drivers/"
 ---
 
 <div id = "upperPart">
@@ -15,13 +14,13 @@ imagePath: "/pics-drivers/"
 - Country: Netherlands
 - Date of birth: 30/09/1997
 - Place of birth: Hasselt, Belgium
-- Points: 890
-- Podiums: 28
+- Points: 948
+- Podiums: 31
 - World championships: 0
 
 </div>
 
-<img  src="./pics-drivers/Verstappen.jpg" alt="Verstappen"  />
+<img  src="../../images/drivers/Verstappen.jpg" alt="Verstappen"  />
 
 </div>
 

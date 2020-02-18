@@ -1,9 +1,3 @@
-/* .sadrzaj-teams ul {
-  display: block;
-}
-.sadrzaj-teams li {
-  display: inline;
-} */
 .post-teams {
   background-color: #f6f3f3;
 }
@@ -27,7 +21,7 @@
 }
 .sadrzaj-teams img {
   object-fit: cover;
-  width: 100%;
+  min-width: 100%;
   height: auto;
 }
 #TeamHistory {
@@ -38,13 +32,16 @@
   .sadrzaj-teams {
     width: 95%;
   }
+  #upper {
+    grid-template-columns: auto 600px;
+  }
 }
 @media screen and (max-width: 1350px) {
   #upper {
-    grid-template-columns: auto 500px;
+    grid-template-columns: auto 570px;
   }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 920px) {
   #upper {
     grid-template-columns: 1fr;
   }

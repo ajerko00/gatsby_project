@@ -4,6 +4,32 @@ title: "Lance Stroll"
 posttype: driver
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed viverra tellus in hac habitasse platea dictumst. Non sodales neque sodales ut etiam sit amet nisl. Sapien nec sagittis aliquam malesuada bibendum. Facilisis mauris sit amet massa. Elit scelerisque mauris pellentesque pulvinar. Dictum fusce ut placerat orci nulla pellentesque. Maecenas accumsan lacus vel facilisis volutpat est velit egestas dui. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Eros donec ac odio tempor orci dapibus ultrices. Vitae elementum curabitur vitae nunc. Blandit turpis cursus in hac habitasse. Orci a scelerisque purus semper eget duis. Sit amet porttitor eget dolor morbi non arcu risus quis. Viverra maecenas accumsan lacus vel. Arcu dictum varius duis at. Sed elementum tempus egestas sed sed risus pretium quam vulputate.
+<div id = "upperPart">
 
-Elit eget gravida cum sociis natoque penatibus et magnis. Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Diam phasellus vestibulum lorem sed. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Habitant morbi tristique senectus et netus et. Consectetur libero id faucibus nisl tincidunt eget. Nibh sit amet commodo nulla facilisi nullam. Sociis natoque penatibus et magnis dis parturient. Orci porta non pulvinar neque. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Sem viverra aliquet eget sit amet. Sit amet porttitor eget dolor morbi non. Lectus urna duis convallis convallis tellus id interdum. Facilisis leo vel fringilla est ullamcorper eget nulla. Urna nunc id cursus metus.
+<div id = "DriverInfo">
+
+## Lance Stroll
+
+- Team: Racing Point
+- Country: Canada
+- Date of birth: 29/10/1998
+- Place of birth: Montreal, Canada
+- Points: 67
+- Podiums: 1
+- World championships: 0
+
+</div>
+
+<img  src="../../images/drivers/Stroll.jpg" alt="Stroll"  />
+
+</div>
+
+<div id = "Biography">
+
+## Biography
+
+Lorem ipsum dolor sit amet, mus blandit at congue eleifend quis. Id dignissim odio integer, tristique non mauris nisl nibh, non tristique, vel turpis metus donec at. Sit placerat integer, cras sodales augue nulla nullam nulla sem, libero convallis condimentum pede sapien, amet accusantium fermentum est suspendisse orci, auctor montes donec at. Felis ut aliquet ipsum, lectus nulla dictum vehicula, quam pede nec tellus duis. Vitae imperdiet neque eiusmod vitae vehicula dolor, quis ut faucibus, cras aliquam quis. Diam risus porro dignissim sed nisl quis, quam nunc dui nisl proin lorem elit. Nec ac pede ultrices.
+
+Sed erat bibendum ligula, ac ipsum pede luctus. Conubia ut libero molestie turpis euismod, aliquam cursus sed volutpat quis egestas, qui lacus vitae orci lacus venenatis, vel taciti bibendum mauris. Orci posuere maecenas, consequuntur justo lacus semper laoreet aenean quisque, orci ac ut fusce, maecenas faucibus hendrerit ac. Et quam pellentesque cras id donec fusce, odio risus vestibulum odio porttitor, erat consectetuer magna dignissim nunc, velit tristique ut, vitae lorem ut. Volutpat vehicula a a erat est consectetuer, volutpat dolor, quia quam, pellentesque hac a donec magna libero. Ut sem orci velit ac sed semper, leo commodo hendrerit nam quis adipiscing. Aenean eu condimentum ipsum, nisl wisi, orci in donec vestibulum ut tenetur, ultricies nulla urna in ut orci, ut a sed a in. Nulla donec, metus et, vivamus tincidunt. Ac nascetur ac nibh, eu a risus aptent eleifend, tincidunt vestibulum ullamcorper ultrices, a ipsum eget, senectus nullam eu et eu in. Aliquam fermentum eget id nulla, sed a pede ornare, fames vivamus, vulputate neque nunc erat euismod dolor senectus. Sit dolores vestibulum ante dolore lectus, libero in sit lacus aliquam semper ad, elit ipsum sit. Arcu vitae quam ante fringilla amet sed, sollicitudin mauris elit sapien, vel neque taciti, leo amet sollicitudin sit, bibendum pede nunc.
+
+</div>
