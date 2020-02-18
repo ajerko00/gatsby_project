@@ -20,7 +20,6 @@ export default class App extends React.Component {
           <section className="section">
             <List items={this.state.list} list0={this.props.driver} />
           </section>
-          <hr />
         </div>
       </div>
     )

@@ -25,7 +25,6 @@ class Standings extends Component {
       <div className="aaa">
         <SEO title="Standings" />
         <Layout />
-
         <div id="buttonDiv">
           <button onClick={this.handleShow} className="driversButton">
             Drivers
@@ -225,7 +224,6 @@ class Standings extends Component {
             </tr>
           </table>
         )}
-
         <Footer />
       </div>
     )

@@ -19,30 +19,22 @@
   font-size: 30px;
 }
 .searchDiv2 {
-  position: relative;
-  width: 1300px;
-  align-items: left;
-  justify-content: center;
+  min-width: 1300px;
 
-  margin: 0em 0em;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1300px) {
   .searchDiv2 {
-    left: 1.2%;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .searchDiv2 {
-    left: 1.2%;
+    width: 100%;
+    margin-left: 1.5em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #grid-container-drivers {
+  .input {
     display: none;
-  }
-  .swiper-drivers-container {
-    margin-top: 1em;
   }
 }
 

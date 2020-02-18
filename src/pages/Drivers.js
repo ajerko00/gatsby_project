@@ -113,7 +113,6 @@ const Drivers = ({ data }) => {
           <p>George Russell</p>
         </Link>
       </Swiper>
-
       <Footer />
     </div>
   )

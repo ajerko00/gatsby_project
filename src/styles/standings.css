@@ -1,6 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .aaa {
   background-color: #f6f3f3;
 }
+
 table {
   margin: 0em 2em 1em 2em;
   max-width: 90%;

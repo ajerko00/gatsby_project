@@ -74,6 +74,7 @@ form {
   .LoginForm {
     max-width: 90%;
     left: 5%;
+    top: 80px;
     margin: 0em;
     height: 450px;
   }
