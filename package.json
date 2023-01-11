@@ -34,7 +34,7 @@
     "gatsby-remark-images-grid": "^1.0.2",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "gitalk": "^1.5.0",
     "js-search": "^1.4.3",
